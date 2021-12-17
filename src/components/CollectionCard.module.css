@@ -1,0 +1,104 @@
+.card {
+  padding: 20px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+  transition: 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+.card:active {
+  transform: translateY(0px);
+  box-shadow: none;
+}
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thumbnail > img {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.card:hover .thumbnail img {
+  transform: scale(1.07);
+}
+.iconFavourite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 99;
+  padding: 5px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.25;
+  transition: 0.2s;
+}
+.iconFavourite:hover {
+  color: #ff62ab;
+  opacity: 1;
+  background-color: #fff;
+}
+.h-6 {
+  height: 1.5rem;
+}
+.w-6 {
+  width: 1.5rem;
+}
+
+.details {
+  padding: 20px 0;
+}
+.name {
+  font-size: 20px;
+  font-weight: 700;
+}
+.id {
+  margin-top: 5px;
+  color: #999;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ownerCard {
+  font-size: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.priceContainer {
+  display: flex;
+  align-items: center;
+  object-fit: contain;
+}
+.price {
+  margin-left: 5px;
+}
+.wethImage {
+  height: 23px;
+  width: 15px;
+}
