@@ -1,0 +1,108 @@
+.info {
+  margin-top: 80px;
+  background-color: #fff;
+}
+.infoContent {
+  padding: 40px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.description {
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .description {
+    width: 40%;
+    text-align: left;
+  }
+}
+.description > a > img {
+  height: 30px;
+  margin-bottom: 8px;
+}
+.description > p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+@media (min-width: 1024px) {
+  .description > p {
+    max-width: 300px;
+  }
+}
+
+.links {
+  min-width: 200px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1024px) {
+  .links {
+    width: 20%;
+  }
+}
+
+.links > h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.links > ul {
+  list-style: none;
+}
+.links > ul > li {
+  line-height: 2;
+}
+.links > ul > li > a {
+  color: #999;
+  padding: 4px 6px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.links > ul > li > a:hover {
+  color: #000;
+  background-color: #ffe375;
+}
+
+.copy {
+  background-color: #f4f4f4;
+}
+.copyContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 0;
+  color: #999;
+  text-align: center;
+}
+
+.copyContent > p:first-child {
+  padding-bottom: 10px;
+}
+
+.copyContent > p {
+  width: 100%;
+}
+
+.copyContent > p:last-child > a {
+  margin-left: 16px;
+}
+
+@media (min-width: 1024px) {
+  .copyContent {
+    text-align: left;
+  }
+  .copyContent > p {
+    width: auto;
+  }
+  .copyContent > p:first-child {
+    padding-bottom: 0;
+  }
+}
