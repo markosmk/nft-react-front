@@ -1,0 +1,95 @@
+.author {
+  padding: 60px 0 40px;
+  margin-bottom: 40px;
+  background-color: #ffe375;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+  }
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .description {
+    flex-wrap: nowrap;
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+  padding: 8px;
+  border: 4px solid #fff;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .avatar {
+    margin: 0;
+  }
+}
+
+.avatar > img {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.owner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin: 15px 0;
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .owner {
+    margin: 0 0 0 20px;
+    text-align: left;
+  }
+}
+.owner > h3 {
+  font-size: 24px;
+}
+.owner > p:last-child {
+  color: #999;
+}
+
+.buttonFollow {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .buttonFollow {
+    margin: 0 0 0 auto;
+  }
+}
+
+.buttonFollow > a {
+  display: block;
+  padding: 18px 32px;
+  background-color: #000;
+  border-radius: 100px;
+  color: #fff;
+  transition: 0.3s;
+}
+.buttonFollow > a:hover {
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+}
