@@ -1,0 +1,33 @@
+.NextArrow,
+.PrevArrow {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  background: #fff;
+  color: black;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+.PrevArrow {
+  top: -40px;
+  left: auto;
+  right: 4rem;
+}
+
+.NextArrow {
+  top: -40px;
+  right: 12px;
+}
+
+.PrevArrow:hover,
+.NextArrow:hover {
+  background: #ffe375;
+  color: black;
+  box-shadow: none;
+}
+.NextArrow:before,
+.PrevArrow:before {
+  content: '';
+}
