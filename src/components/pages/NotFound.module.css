@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.wrapper > p {
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 300;
+}
+.imageIcon > svg {
+  height: 180px;
+}
+.buttonBack {
+  padding: 18px 32px;
+  background-color: #000;
+  border-radius: 100px;
+  color: #fff;
+  transition: 0.3s;
+}
+.buttonBack:hover {
+  background-color: #ffe375;
+  color: #000;
+  text-decoration: none;
+}
