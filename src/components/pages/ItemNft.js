@@ -15,7 +15,12 @@ const ItemNft = () => {
   useEffect(() => {
     const getMyNfts = async () => {
       const openseaData = await axios.get(
-        `https://api.opensea.io/api/v1/asset/${address}/${token}/`
+        `https://api.opensea.io/api/v1/asset/${address}/${token}/`,
+        {
+          headers: {
+            'X-API-KEY': process.env.REACT_APP_API_KEY,
+          },
+        }
       );
       setAsset(openseaData.data);
     };

@@ -16,7 +16,12 @@ const Owner = () => {
   useEffect(() => {
     const getMyNfts = async () => {
       const openseaData = await axios.get(
-        `https://api.opensea.io/assets/?asset_contract_address=${address}&order_direction=asc&offset=0&limit=20`
+        `https://api.opensea.io/assets/?asset_contract_address=${address}&order_direction=asc&offset=0&limit=20`,
+        {
+          headers: {
+            'X-API-KEY': process.env.REACT_APP_API_KEY,
+          },
+        }
       );
       setListCards(openseaData.data.assets);
     };

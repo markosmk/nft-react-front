@@ -19,7 +19,12 @@ const Home = () => {
       const random = Math.floor(Math.random() * authorCollections.length);
       const ide = authorCollections[random].address;
       const openseaData = await axios.get(
-        `https://api.opensea.io/assets/?asset_contract_address=${ide}&order_direction=asc&offset=0&limit=20`
+        `https://api.opensea.io/assets/?asset_contract_address=${ide}&order_direction=asc&offset=0&limit=20`,
+        {
+          headers: {
+            'X-API-KEY': process.env.REACT_APP_API_KEY,
+          },
+        }
       );
       setListCards(openseaData.data.assets);
     };
