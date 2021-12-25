@@ -1,6 +1,6 @@
-# Project: Practice with Reactjs 
+# Project: Web NFT Kool with ReactJs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project to practice the use of APIs, and dynamic routes in react, You can see it in action here [(Ver Online)](https://markosmk.github.io/nft-react-front/)
 
 ## Applied tools
 
@@ -9,7 +9,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Axios
 - React Slick (carousel)
 - Styles (module css)
-- Api Opensea NFT
+- Api Opensea NFTs
+
+![imagen-preview](./preview.jpg)
 
 ## Available Scripts
 
