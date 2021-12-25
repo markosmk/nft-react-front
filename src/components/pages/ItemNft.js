@@ -17,6 +17,7 @@ const ItemNft = () => {
       const openseaData = await axios.get(
         `https://api.opensea.io/api/v1/asset/${address}/${token}/`,
         {
+          Accept: 'application/json',
           headers: {
             'X-API-KEY': process.env.REACT_APP_API_KEY,
           },
