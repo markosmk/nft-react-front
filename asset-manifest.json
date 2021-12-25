@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/nft-react-front/static/css/main.b0d7bf03.chunk.css",
+    "main.js": "/nft-react-front/static/js/main.9e25081a.chunk.js",
+    "main.js.map": "/nft-react-front/static/js/main.9e25081a.chunk.js.map",
+    "runtime-main.js": "/nft-react-front/static/js/runtime-main.8098380f.js",
+    "runtime-main.js.map": "/nft-react-front/static/js/runtime-main.8098380f.js.map",
+    "static/js/2.ec036a2c.chunk.js": "/nft-react-front/static/js/2.ec036a2c.chunk.js",
+    "static/js/2.ec036a2c.chunk.js.map": "/nft-react-front/static/js/2.ec036a2c.chunk.js.map",
+    "static/js/3.2af91fb2.chunk.js": "/nft-react-front/static/js/3.2af91fb2.chunk.js",
+    "static/js/3.2af91fb2.chunk.js.map": "/nft-react-front/static/js/3.2af91fb2.chunk.js.map",
+    "index.html": "/nft-react-front/index.html",
+    "static/css/main.b0d7bf03.chunk.css.map": "/nft-react-front/static/css/main.b0d7bf03.chunk.css.map",
+    "static/js/2.ec036a2c.chunk.js.LICENSE.txt": "/nft-react-front/static/js/2.ec036a2c.chunk.js.LICENSE.txt",
+    "static/media/hero.ca19034d.png": "/nft-react-front/static/media/hero.ca19034d.png",
+    "static/media/logo.0b809058.png": "/nft-react-front/static/media/logo.0b809058.png",
+    "static/media/profile.8cb0ec1e.png": "/nft-react-front/static/media/profile.8cb0ec1e.png",
+    "static/media/weth.4101f1da.png": "/nft-react-front/static/media/weth.4101f1da.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8098380f.js",
+    "static/js/2.ec036a2c.chunk.js",
+    "static/css/main.b0d7bf03.chunk.css",
+    "static/js/main.9e25081a.chunk.js"
+  ]
+}
