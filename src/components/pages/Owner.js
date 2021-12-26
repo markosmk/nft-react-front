@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { HeaderAuthor } from '../HeaderAuthor';
 import { Loading } from '../Loading';
 import Collection from '../Collection';
+import { getOWner } from '../../services/api';
 
 const Owner = () => {
   const [listCards, setListCards] = useState([]);
@@ -15,15 +15,7 @@ const Owner = () => {
   }, []);
   useEffect(() => {
     const getMyNfts = async () => {
-      const openseaData = await axios.get(
-        `https://api.opensea.io/api/v1/assets?asset_contract_address=${address}&order_direction=asc&offset=0&limit=20`,
-        {
-          Accept: 'application/json',
-          headers: {
-            'X-API-KEY': process.env.REACT_APP_API_KEY,
-          },
-        }
-      );
+      const openseaData = await getOWner(address);
       setListCards(openseaData.data.assets);
     };
     return getMyNfts();

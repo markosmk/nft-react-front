@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import { Loading } from '../Loading';
+import { getItem } from '../../services/api';
 import styles from './ItemNft.module.css';
 
 const ItemNft = () => {
@@ -14,15 +14,7 @@ const ItemNft = () => {
   }, []);
   useEffect(() => {
     const getMyNfts = async () => {
-      const openseaData = await axios.get(
-        `https://api.opensea.io/api/v1/asset/${address}/${token}/`,
-        {
-          Accept: 'application/json',
-          headers: {
-            'X-API-KEY': process.env.REACT_APP_API_KEY,
-          },
-        }
-      );
+      const openseaData = await getItem(address, token);
       setAsset(openseaData.data);
     };
     return getMyNfts();
