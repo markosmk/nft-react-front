@@ -29,13 +29,7 @@ const Home = () => {
       <Hero />
       <Features />
       <TopAuthors collections={authorCollections} />
-      {listCards.length > 0 ? (
-        <>
-          <Collection listCards={listCards} />
-        </>
-      ) : (
-        <Loading />
-      )}
+      {listCards.length > 0 ? <Collection listCards={listCards} /> : <Loading />}
     </>
   );
 };
