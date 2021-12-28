@@ -24,13 +24,7 @@ const Owner = () => {
   return (
     <>
       <HeaderAuthor addressContact={address} />
-      {listCards.length > 0 ? (
-        <>
-          <Collection listCards={listCards} />
-        </>
-      ) : (
-        <Loading />
-      )}
+      {listCards.length > 0 ? <Collection listCards={listCards} /> : <Loading />}
     </>
   );
 };
